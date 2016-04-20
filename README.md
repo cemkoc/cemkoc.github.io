@@ -1,1 +1,1 @@
-## My Personal Website and Blog
+## Personal Website and Blog
