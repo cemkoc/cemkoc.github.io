@@ -148,12 +148,20 @@
       <tr>
         <!-- <td width="25%"><img src="/assets/images/atsushi_dnn.gif" alt="prl" width="160" height="160"></td> -->
         <td width="25%">
-          <div style="max-width: 200px;" id="_giphy_atsushi"></div>
+          <img id="atsushigif" src="/assets/images/atsushi_dnn.gif" />
           <script>
-           var _giphy_play_on_hover = true; var _giphy = _giphy || []; _giphy.push({id: "atsushi",w: 480, h: 290, clickthrough_url: "/assets/images/atsushi_dnn.gif"});var g = document.createElement("script"); g.type = "text/javascript"; g.async = true;g.src = ("https:" == document.location.protocol ? "https://" : "http://") + "giphy.com/static/js/widgets/embed.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(g, s);
+              $(function() {
+                  $("#atsushigif").hover(
+                      function() {
+                          $(this).attr("src", "/assets/images/atsushi_dnn.gif");
+                      },
+                      function() {
+                          $(this).attr("src", "/assets/images/atsushi_face.png");
+                      }                         
+                  );                  
+              });
           </script>
         </td>
-        <td width="75%" valign="top">
         <p>
           <a href="/files/CS280_ProjectPoster.pdf" target="_blank">
           <papertitle>Detecting Faces in Animes Using Supervised Domain Adaptation</papertitle>
