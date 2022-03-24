@@ -177,8 +177,7 @@
         <heading>Projects</heading>
         <p>
           Here you can find some of the projects I've worked on. I am very interested in developing projects which are at the intersection of Machine Learning, 
-          Distributed/Parallel Computing and Big Data Analytics. Specifically interested in designing distributed frameworks for machine learning, ETL pipelines 
-          and high performance computing. I also love graphs especially when they don't have negative cycles.
+          Reinforcement Learning and Distributed/Parallel Computing
         </p>
         </td>
       </tr>
@@ -193,9 +192,6 @@
                 <papertitle>Parallelizing Chamfer Distance Computation for Point Cloud Similarity</papertitle>
               </a>
               <br>
-              <strong>Cem Koc</strong>,
-              Eric Liu,
-              Spring 2021<br>
               <a href="/files/chamfer_distance_slide.pdf" target="_blank">slide</a>,
               <a href="/files/CS_267_Final_Project_Report_Cem_Koc_Eric_Liu.pdf" target="_blank">report</a>
             <p><br>
@@ -224,14 +220,14 @@
           <strong>Cem Koc*</strong>,
           Can Koc*,
           Brian Su*,
-          <em>CS280: Special Topics in Computer Vision (graduate level)</em>, Spring 2016<br>
           <a href="/files/CS280_ProjectPoster.pdf" target="_blank">poster</a>,
           <a href="/files/Detecting_Anime_Faces.pdf" target="_blank">report</a>
 
           <p><br>
-            We created our own anime images dataset and labeled them whether they contain face or not.
-            Using GoogleNet, AlexNet, VGGFace models pre-trained on ImageNet 2014 we did supervised domain adaptation on
-            these models by fine-tuning them on our anime faces dataset from various layers. Achieved ~97% accuracy.
+            Wanted to try out domain adaptation and transfer learning.
+            Created an entirely new anime images dataset from frames and hand-labelled whether they contain a face or not.
+            Fine tuned GoogleNet, AlexNet, VGGFace models (pre-trained on ImageNet 2014) with this anime faces dataset and
+            confirmed that we can achieve ~97% accuracy.
           </p>
         </p>
         </td>
@@ -252,19 +248,13 @@
           <papertitle>Prioritized Experience Replay Kills on ViZDoom</papertitle>
           </a>
           <br>
-          <strong>Cem Koc*</strong>,
-          Can Koc*,
-          Brian Su*,
-          <em>CS294-129: Special Topics in Designing, Visualizing and Understanding Deep Neural Networks (graduate level)</em>, Fall 2016<br>
           <a href="/files/cs294-129_poster.pdf" target="_blank">poster</a>
-
-
           <p><br>
             Implemented Prioritized Experience Replay from 2016 <a href="https://arxiv.org/abs/1511.05952">paper</a>
-            from Schaul et al. to play on ViZDoom. Our results have shown that Prioritized Experience replay
-            significantly reduces training time on both dense and sparse reward games. Benchamarked it
-            with DQN model from the original DeepMind <a href="https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf">paper</a>.
-            Compared to vanilla DQN our model trains much faster.
+            from Schaul et al. to play on ViZDoom. Prioritized Experience replay
+            significantly reduced the training time on both dense and sparse reward games when compared 
+            to the DQN <a href="https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf">paper</a>.
+            This was trained on a single GPU using TF Keras.
           </p>
         </p>
         </td>
